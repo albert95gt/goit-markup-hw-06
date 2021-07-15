@@ -461,7 +461,7 @@
       </div>
     </div>
     </footer>
-    <div class="backdrop " data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="close-btn" data-modal-close>
           <svg class="close-icon" width="11" height="11">
@@ -501,12 +501,12 @@
             Комментарий
             <textarea name="user-message" class="modal-form-message" placeholder="Введите текст"></textarea>
           </label>
-          <input type="checkbox" id="accept-policy" class="modal-form-chekbox-input visually-hidden"> 
-          <label for="accept-policy" class="modal-form-chekbox-label">Соглашаюсь с рассылкой и принимаю<a href="">Условия договора</a></label>
-          <button class="modal-form-btn" type="submit">Отправить</button>
+          <input type="checkbox" id="accept-policy" class="modal-form-chekbox-input visually-hidden" required> 
+          <label for="accept-policy" class="modal-form-chekbox-label">Соглашаюсь с рассылкой и принимаю&nbsp;<a href="" class="checkbox-label-link">Условия договора</a></label>
+          <button class="modal-form-btn button" type="submit">Отправить</button>
         </form>
       </div>
     </div>
-    <!-- <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script>
   </body>
 </html>
