@@ -110,23 +110,29 @@ img {
     height: 100%;
  }
  .button {
-    border: none;
-    border-radius: 4px;
+    
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.06em;
     cursor: pointer;
+
+    border: none;
+    border-radius: 4px;
     
     color: var(--primery-white-colour);
     background-color: var(--accent-colour);
 
-    transition: background-color 250ms var(--transition-timing-function);
+
+    transition: background-color 250ms var(--transition-timing-function),
+    box-shadow 250ms var(--transition-timing-function);
     }
     .button:hover,
     .button:focus{
     background-color: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
  }
   
  /* ============= END COMPONENTS ============= */
@@ -712,6 +718,11 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: transparent;
   cursor: pointer;
+  transition: fill 250ms var(--transition-timing-function);
+}
+.close-btn:focus,
+.close-btn:hover {
+  fill: var(--accent-colour);
 }
 .modal-form-head {
   margin-bottom: 12px;
@@ -820,6 +831,7 @@ img {
   background-color: var(--accent-colour);
   background-image: url(../images/icon-check.svg);
   background-size: contain;
+  background-repeat: no-repeat;
   background-origin: border-box;
   border-color: var(--accent-colour);
 }
