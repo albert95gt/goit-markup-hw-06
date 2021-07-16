@@ -835,6 +835,9 @@ img {
   background-origin: border-box;
   border-color: var(--accent-colour);
 }
+.modal-form-chekbox-input:focus + .modal-form-chekbox-label::before {
+  outline: 1px solid var(--accent-colour);
+}
 .modal-form-btn {
   width: 200px;
   height: 50px;
